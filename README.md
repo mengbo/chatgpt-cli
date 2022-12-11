@@ -4,10 +4,14 @@
 
 `chatgpt-cli.py` 是聊天机器人的脚本，`imagecreate-cli.py` 是生成图片的脚本。
 
+注意，OpenAI 的 python 库使用的系统环境变量 `OPENAI_API_KEY` 需要设置。
+
 建议使用 PDM 设置开发环境，命令如下：
 
 ```shell-session
-$ pdm install
+$ pdm use python3
+$ pdm update
 ```
 
-注意，OpenAI 的 python 库使用的系统环境变量 `OPENAI_API_KEY` 需要设置。
+[![pdm-managed](https://img.shields.io/badge/pdm-managed-blueviolet)](https://pdm.fming.dev)
+
