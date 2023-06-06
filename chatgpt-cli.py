@@ -1,6 +1,7 @@
 import os
 import openai
 
+openai.api_base = os.environ.get('OPENAI_API_BASE')
 openai.api_key = os.environ.get('OPENAI_API_KEY')
 completion = openai.Completion()
 
