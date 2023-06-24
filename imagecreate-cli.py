@@ -13,6 +13,7 @@ def download_img(url, filename):
 def main():
     image_desc = input("Image description: ")
     filename = input("Filename(*.png): ")
+    openai.api_base = os.environ.get('OPENAI_API_BASE')
     openai.api_key = os.environ.get('OPENAI_API_KEY')
     response = openai.Image.create(
         prompt=image_desc,

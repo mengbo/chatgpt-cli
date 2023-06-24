@@ -15,7 +15,7 @@ def ask(question, chat_log=None):
     prompt = f'{chat_log}ME: {question}\nAI:'
     response = completion.create(
         prompt=prompt, model="text-davinci-003",
-        stop=['\nME'], temperature=0.9,
+        stop=['\nME'], temperature=0.0,
         top_p=1, frequency_penalty=0,
         presence_penalty=0.6, best_of=1,
         max_tokens=2048)
